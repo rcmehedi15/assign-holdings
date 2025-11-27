@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'assignho_user';
-$db['default']['password'] = '4^yp###W1F4S';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'assignho_database';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

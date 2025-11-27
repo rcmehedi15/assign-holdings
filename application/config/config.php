@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://www.assignholdings.com/';
+$config['base_url'] = 'https://www.localhost/assign/';
 /*
 |--------------------------------------------------------------------------
 | Index File
