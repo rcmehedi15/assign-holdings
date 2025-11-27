@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Not Found (#404)</title>
+
+    <link rel="apple-touch-icon" sizes="72x72" href="/frontend/web/themes/real_estate/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/frontend/web/themes/real_estate/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/frontend/web/themes/real_estate/assets/img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/frontend/web/themes/real_estate/assets/img/manifest.json">
+    <link rel="mask-icon" href="/frontend/web/themes/real_estate/assets/img/safari-pinned-tab.svg" color="#8b8232">
+    <link rel="shortcut icon" href="/frontend/web/themes/real_estate/assets/img/favicon.ico">
+    <meta name="msapplication-config" content="/frontend/web/themes/real_estate/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link href="/admin/assets/f3068eb9/css/bootstrap.css" rel="stylesheet">
+<link href="/admin/css/site.css" rel="stylesheet">
+<link href="/admin/resources/css/animate.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/simple-line-icons.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/bootstrap.min.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/font.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/bootstrap-chosen.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/smoke.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/toastr.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/datepicker.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/cropper.min.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/app.css" rel="stylesheet" media="all">
+<link href="/admin/resources/css/mystyle.css" rel="stylesheet" media="all"></head>
+<body>
+
+<div class="app app-header-fixed app-aside-dock">
+
+        <div class="butterbar hide" style="z-index: 9999999999;position:fixed;top:0;width:100%;"><span class="bar"></span></div>
+
+    <!-- header -->
+    <header id="header" class="app-header navbar" role="menu">
+        <!-- navbar header -->
+        <div class="navbar-header bg-dark">
+            <button class="pull-right visible-xs dk" ui-toggle-class="show" target=".navbar-collapse">
+                <i class="glyphicon glyphicon-cog"></i>
+            </button>
+            <button class="pull-right visible-xs" ui-toggle-class="off-screen" target=".app-aside" ui-scroll="app">
+                <i class="glyphicon glyphicon-align-justify"></i>
+            </button>
+            <!-- brand -->
+            <a href="#/" class="navbar-brand text-lt">
+                <img src="/admin/settings_images/logo-1488715861.svg" alt="Shanta Holdings Ltd." class="">
+                <!-- <span class="hidden-folded m-l-xs">Shanta Holdings Ltd.</span> -->
+            </a>
+            <!-- / brand -->
+        </div>
+        <!-- / navbar header -->
+
+        <!-- navbar collapse -->
+        <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+            <!-- buttons -->
+            <div class="nav navbar-nav hidden-xs">
+                <a href="#" class="btn no-shadow navbar-btn" ui-toggle-class="app-aside-folded" target=".app">
+                    <i class="fa fa-dedent fa-fw text"></i>
+                    <i class="fa fa-indent fa-fw text-active"></i>
+                </a>
+            </div>
+            <!-- / buttons -->
+
+            <!-- link and dropdown -->
+            <ul class="nav navbar-nav hidden-sm">
+
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <i class="fa fa-fw fa-plus visible-xs-inline-block"></i>
+                        <span translate="header.navbar.new.NEW">New</span> <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/admin/p/page/create">Page</a></li>
+                        <li><a href="/admin/c/category/create">Category</a></li>
+                        <li><a href="/admin/pr/product/create">Product</a></li>
+                        <li><a href="/admin/g/gallery/create">Gallery</a></li>
+                        <li><a href="/admin/f/forms/create">Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- / link and dropdown -->
+
+            <!-- search form -->
+            <form class="navbar-form navbar-form-sm navbar-left shift" action="/admin/site/search">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" name="keyword" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search ...">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <!-- / search form -->
+
+            <!-- nabar right -->
+            <ul class="nav navbar-nav navbar-right">
+
+                                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+                        <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                                                            <img src="/admin/resources/images/avatar.png" alt="">
+                            
+                            <i class="on md b-white bottom"></i>
+                        </span>
+                        <span class="hidden-sm hidden-md"></span> <b class="caret"></b>
+                    </a>
+                    <!-- dropdown -->
+                    <ul class="dropdown-menu animated fadeInRight w">
+                        <li>
+                            <a href="/admin/global/settings" >
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/admin/u/user/view">Profile</a>
+                        </li>
+                        <li>
+                            <a href="/admin/u/user/change_password">Change Password</a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a data-method="post" href="/admin/site/logout">Logout</a>
+                        </li>
+                    </ul>
+                    <!-- / dropdown -->
+                </li>
+            </ul>
+            <!-- / navbar right -->
+        </div>
+        <!-- / navbar collapse -->
+    </header>
+    <!-- / header -->
+
+
+    <!-- aside -->
+    <aside id="aside" class="app-aside hidden-xs bg-black">
+        <div class="aside-wrap">
+            <div class="navi-wrap">
+
+
+                <!-- nav -->
+                <nav ui-nav class="navi clearfix">
+                    <ul class="nav">
+                        <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                            <span>Navigation</span>
+                        </li>
+
+                        <li>
+                            <a href="/admin/site/index">
+                                <i class="glyphicon glyphicon-stats icon text-info-lter"></i>
+                                <span class="font-bold">Dashboard</span>
+                            </a>
+                        </li>
+
+                                                <li class="">
+                            <a href class="auto">
+                                <span class="pull-right text-muted">
+                                    <i class="fa fa-fw fa-angle-right text"></i>
+                                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                                </span>
+                                <i class="fa fa-users icon text-success"></i>
+                                <span class="font-bold">Access Controll</span>
+                            </a>
+                            <ul class="nav nav-sub dk">
+                                <li>
+                                    <a href="/admin/rbac/assignment">
+                                        <span>Assignments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin/rbac/permission">
+                                        <span>Permissions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin/rbac/role">
+                                        <span>Roles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin/rbac/route">
+                                        <span>Routes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="line dk hidden-folded"></li>
+
+                        <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                            <span>Global</span>
+                        </li>
+
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </nav>
+                <!-- nav -->
+
+            </div>
+
+        </div>
+    </aside>
+    <!-- / aside -->
+
+
+    <!-- content -->
+    <div id="content" class="app-content" role="main">
+
+        <div class="app-content-body fade-in-up">
+                        <div class="site-error">
+
+    <h1>Not Found (#404)</h1>
+
+    <div class="alert alert-danger">
+        Page not found.    </div>
+
+    <p>
+        The above error occurred while the Web server was processing your request.
+    </p>
+    <p>
+        Please contact us if you think this is a server error. Thank you.
+    </p>
+
+</div>
+
+        </div>
+    </div>
+    <!-- /content -->
+
+    <!-- footer -->
+    <footer id="footer" class="app-footer" role="footer">
+        <div class="wrapper b-t bg-light">
+            &copy; 2018 Shanta Holdings Ltd.        </div>
+    </footer>
+    <!-- / footer -->
+
+    <div id="default" data-pjax-container="" data-pjax-timeout="500000">    </div>
+
+    <div class="modal fade" id="image_cropper_modal" >
+        <div class="modal-dialog modal-lg" style="width: 90%;">
+            <div class="modal-content" style="border-radius:0;">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Image cropper</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/admin/assets/b334427a/jquery.js"></script>
+<script src="/admin/assets/15e49a10/yii.js"></script>
+<script src="/admin/assets/7957ec58/jquery.pjax.js"></script>
+<script src="/admin/resources/js/bootstrap.min.js"></script>
+<script src="/admin/ckeditor/ckeditor.js"></script>
+<script src="/admin/resources/js/ui-load.js"></script>
+<script src="/admin/resources/js/ui-jp.config.js"></script>
+<script src="/admin/resources/js/ui-jp.js"></script>
+<script src="/admin/resources/js/ui-nav.js"></script>
+<script src="/admin/resources/js/ui-toggle.js"></script>
+<script src="/admin/resources/js/ui-client.js"></script>
+<script src="/admin/resources/js/chosen.jquery.min.js"></script>
+<script src="/admin/resources/js/smoke.min.js"></script>
+<script src="/admin/resources/js/toastr.js"></script>
+<script src="/admin/resources/js/bootstrap-datepicker.js"></script>
+<script src="/admin/resources/js/cropper.min.js"></script>
+<script src="/admin/resources/js/jscolor.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery(document).pjax("#default a", {"push":false,"replace":false,"timeout":500000,"scrollTo":false,"container":"#default"});
+jQuery(document).on("submit", "#default form[data-pjax]", function (event) {jQuery.pjax.submit(event, {"push":false,"replace":false,"timeout":500000,"scrollTo":false,"container":"#default"});});
+
+
+        $(document).delegate('.edit_image_open_modal_btn','click',function(){
+            var url = $(this).attr('href');
+            $.ajax({
+                type : 'POST',
+                dataType : 'json',
+                url : url,
+                data: {},
+                beforeSend : function( request ){
+                    $('#image_cropper_modal').modal('show');
+                },
+                success : function( data )
+                    {
+                        if(data.result == 'success'){
+                            $('#image_cropper_modal .modal-body').html(data.msg);
+
+                            initCropSize();
+                        }else{
+                            toastr.error(data.msg,'');
+                        }
+                    }
+            });
+            return false;
+        });
+
+        $(document).delegate('.image_crop_form', 'beforeSubmit', function(event, jqXHR, settings) {
+
+                var form = $(this);
+                if(form.find('.has-error').length) {
+                        return false;
+                }
+
+                $.ajax({
+                        url: form.attr('action'),
+                        type: 'post',
+                        data: form.serialize(),
+                        success: function(data) {
+
+                            if(data.result=='success'){
+                                toastr.success(data.msg,'');
+
+                            }else{
+                                toastr.error(data.msg,'');
+                            }
+                        }
+                });
+
+                return false;
+        });
+
+        $(document).delegate('.image_sizes_selection_for_crop input','click',function(){
+            initCropSize();
+        });
+
+        function initCropSize(){
+            var selected = $(".image_sizes_selection_for_crop input[type='radio']:checked").val();
+            var res = selected.split('x');
+            if(res.length == 2){
+                $(document).find('.crop_thumb_height').val(res[1]);
+                $(document).find('.crop_thumb_width').val(res[0]);
+
+                $(document).find('.image_cropper_preview').css('height',res[1]+'px');
+                $(document).find('.image_cropper_preview').css('width',res[0]+'px');
+
+                $("#image_cropper_image").cropper('destroy');
+
+                var ratio_val = res[0]/res[1];
+
+                $("#image_cropper_image").cropper({
+                  aspectRatio: ratio_val / 1,
+                  viewMode:1,
+                  preview: ".image_cropper_preview",
+                  minCropBoxWidth : res[0],
+                  minCropBoxHeight: res[1],
+                  crop: function(e) {
+                    $(".crop_x").val(e.x);
+                    $(".crop_y").val(e.y);
+                    $(".crop_width").val(e.width);
+                    $(".crop_height").val(e.height);
+
+                  }
+                });
+                console.log('initialized');
+            }
+            return true;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        $(document).on('hidden.bs.modal','.modal', function () {
+            $(document).find('.modal').each(function(index,item){
+                if($(item).hasClass('in')){
+                    $('body').addClass('modal-open');
+                    console.log(item);
+                }
+            });
+        });
+
+        $(document).on('shown.bs.modal', function () {
+
+            $('.pagepost-type', this).chosen('destroy').chosen();
+            $('.productpost-type', this).chosen('destroy').chosen();
+            $('.init_chosen', this).chosen('destroy').chosen();
+        });
+
+        $( document ).ajaxStart(function() {
+            $('.butterbar').addClass('active').removeClass('hide');
+        });
+        $( document ).ajaxComplete(function() {
+            $('.butterbar').removeClass('active').addClass('hide');
+        });
+
+
+
+
+
+        var idleTime = 0;
+        $(document).ready(function () {
+            //Increment the idle time counter every minute.
+            var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+            //Zero the idle timer on mouse movement.
+            $(this).mousemove(function (e) {
+                idleTime = 0;
+            });
+            $(this).keypress(function (e) {
+                idleTime = 0;
+            });
+        });
+
+        function timerIncrement() {
+            idleTime = idleTime + 1;
+            if (idleTime > 600) {
+                var cur_url = window.location.href;
+                $.ajax({
+                    url: '/admin/site/logout',
+                    type: 'post',
+                    data: {cur_url:cur_url},
+                    success: function(data) {
+
+                        if(data.result=='success'){
+                            location.href = data.url;
+                        }else{
+
+                        }
+                    }
+                });
+            }
+        }
+
+
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({
+                'placement': 'top',
+                'container':'body'
+            });
+        });
+
+        var url = document.location.toString();
+        if (url.match('#')) {
+            $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').click();
+        }
+        // Change hash for page-reload
+        $('.nav-tabs a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+            window.scrollTo(0, 0);
+        })
+
+
+    
+});</script></body>
+</html>
