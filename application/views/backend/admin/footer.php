@@ -4,5 +4,5 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Assign Holdings Ltd</a>.</strong> All rights reserved.
   </footer>

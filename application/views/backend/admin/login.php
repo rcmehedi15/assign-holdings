@@ -105,7 +105,7 @@
 <script src="<?php echo base_url(); ?>asset/backend_template/bower_components/validator/validator.min.js"></script>
 
 <!-- AdminLTE App -->
-<script src=".<?php echo base_url(); ?>asset/backend_template/dist/js/adminlte.min.js"></script>
+<script src="<?php echo base_url(); ?>asset/backend_template/dist/js/adminlte.min.js"></script>
 
 <script>
   $(function () {

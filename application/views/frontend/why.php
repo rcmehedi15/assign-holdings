@@ -4,7 +4,7 @@ $page = $this->db->query("select *from pages where name='why'")->row();
 ?>
         
     <div id="scrolling_slide" data-class-in="block-in" data-class-out="block-left" class="banner-slider-wrapper overflow-hidden">
-  <a href="#why-shanta-holdings" class="animate-scroll scroll-down">
+  <a href="" class="animate-scroll scroll-down">
       <img src="<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow-down.svg" alt="down arrow">
   </a>
   <div class="no-pad project-detail-info fullscreen-content general-page">
@@ -23,7 +23,7 @@ $page = $this->db->query("select *from pages where name='why'")->row();
   </div>
     <div id="layerslider" class="fitvidsignore" style="width:100%; height:100%;">
     	    <div data-color="#006b5f" class="ls-slide banner-slider-item slider_topper" data-ls="slidedelay:5500;transition2d:12;">
-        <img src="<?php echo base_url(); ?>asset/images/pages/<?php echo $page->banner; ?>" class="ls-bg" alt="Shantaholdings Slide">
+        <img src="<?php echo base_url(); ?>asset/images/pages/<?php echo $page->banner; ?>" class="ls-bg" alt="">
     </div>
 		
     </div>

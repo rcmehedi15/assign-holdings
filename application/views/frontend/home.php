@@ -147,11 +147,7 @@ $this->load->view('frontend/header.php');
                             
 
                         </div>
-                        <div class="visible-xs ">
-                            <a href="why-shanta-holdings.html" class="button button-outline button-outline-white mt-30 mb-100">
-                                Explore
-                            </a>
-                        </div>
+                      
                         <div class="lightbox-content-wrapper">
                             <?php
 							$cnt = 1;
@@ -208,16 +204,26 @@ $this->load->view('frontend/header.php');
                                 <div class="carousel-item">
                                     <div class="inner">
                                         <a href="<?php echo base_url(); ?>projects/details/<?php echo $value->id; ?>">
+                                            
+                                            									<h3 class="title normal text-green bg-primary p-4 py-3 br-4 h-100">
+    <?php 
+        if($value->status == 1) echo "Ongoing"; 
+        else if($value->status == 2) echo "Upcoming"; 
+        else if($value->status == 3) echo "Handed Over"; 
+    ?>
+</h3>
+
                                             <div class="image-thumb high-contrast assign-featured-home-project-image">
                                                 <img src="<?php echo base_url(); ?>asset/images/projects/<?php echo $value->ataglance_image; ?>" alt="<?php echo $value->name; ?>" title="<?php echo $value->name; ?>" height="">
                                             </div>
                                           <h3 class="title text-green"><?php echo $value->name; ?></h3>
                                             <h5 class="text-white"><?php echo $value->address; ?></h5>
-                                                                                            <span class="read-more">
-                                                    <?php
-													if($value->type==1)echo 'Residential';
-													else if($value->type==1)echo 'Commercial';
-													?>                                                </span>
+                                                   
+                                                    <span class="read-more br-2">
+                                                        
+                                                   View Deatails   
+													
+													</span>
                                             
                                         </a>
                                     </div>
@@ -230,8 +236,8 @@ $this->load->view('frontend/header.php');
 						
                         </div>
                         <div class="carousel-nav">
-                            <img class='prev slick-prev' src='<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_left.svg'  data-src='/themes/real_estate/assets/img/icons/arrow_colored_left.svg'  alt="Arrow left">
-                            <img class='next slick-next' src='<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_right.svg' data-src='/themes/real_estate/assets/img/icons/arrow_colored_right.svg'  alt="Arrow right">
+                            <img class='prev slick-prev' src='<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_left.svg'  data-src="<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_left.svg"  alt="Arrow left">
+                            <img class='next slick-next' src='<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_right.svg' data-src="<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/arrow_Dark_right.svg"  alt="Arrow right">
                         </div>
                     </div>
                 </div>
@@ -241,83 +247,6 @@ $this->load->view('frontend/header.php');
     </div>
 </section>
 
-<?php /*?>
-<div class="msg_cont_wrap msg_closed">
-
-	<div class="contact-form custom-select msg_form">
-		<img src="<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/global-menu-close-black.svg" class="close_btn">
-		<h3 class="title mb-30 text-color-11">Send us a message</h3>
-		
-
-
-
-
-
-
-		<form id="question-general" class="dynamic_form form-primary" action="http://www.shantaholdings.com/site/dynamic_form" method="post" data-pjax="false">
-<input type="hidden" name="_csrf-frontend" value="TlhwNGw1LWoIFRJkJQdrBS0JAVonWE8pYzUKUSAGfVMpPxhdFUJjJA==">
-					<!-- form full -->
-					<input type="hidden" id="question-general" class="form-control" name="form_id" value="question-general">
-
-					
-
-<div class="form-message-container success_wrapper hide success_wrapper_question-general">
-    <div class="form-message-body">
-        <div class="cross-popup" data-msg-close>
-            X
-        </div>
-        <span class="success_container_question-general"></span>
-        <div>
-            <div data-msg-close class="close-btn button button-outline button-outline-blackish mt-30 popup-ok-btn">Ok</div>
-        </div>
-    </div>
-</div>
-<div class="form-message-container error_wrapper hide error_wrapper_question-general">
-    <div class="form-message-body">
-        <div class="cross-popup" data-msg-close>
-            X
-        </div>
-        <span class="error_container_question-general"></span>
-        <div>
-            <div data-msg-close class="close-btn button button-outline button-outline-blackish mt-30 popup-ok-btn">Ok</div>
-        </div>
-    </div>
-</div>
-					
-													<div class="form-group field-contact-name has-child-pad field-contact-name required">
-     <input type="text" id="name" class="form-control" name="Dynamicform[name]" placeholder="Enter your name here">
-<p class="help-block help-block-error"></p>
-</div>							
-					
-													<div class="form-group field-contact-name has-child-pad field-contact-name required">
-     <input type="text" id="email" class="form-control" name="Dynamicform[email]" placeholder="Enter your email here">
-<p class="help-block help-block-error"></p>
-</div>							
-													<div class="form-group field-contact-message required">
-	<textarea id="Message" class="form-control" name="Dynamicform[Message]" placeholder="Enter your feedback here"></textarea>
-<p class="help-block help-block-error"></p>
-</div>
-					
-					
-					<div class="mt-20">
-<button type="submit" class="btn text-bold no-bg no-radius no-border dynamic_submit_btn">Submit</button>
-				</div>
-
-							<!-- end of form full -->
-		
-		</form>
-
-
-
-	</div>
-
-
-		<div class="msg_cont">
-
-		</div>
-		<img src="<?php echo base_url(); ?>asset/frontend_template/themes/real_estate/assets/img/icons/feedback-icon.svg" class="msg_icon">
-</div>
-<?php */?>
 <?php
 $this->load->view('frontend/footer.php');
 ?>

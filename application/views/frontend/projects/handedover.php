@@ -2,7 +2,7 @@
 $this->load->view('frontend/header.php');
 ?>
 
-<section class="banner-secondary projects-cat-banner">
+<section class="banner-secondary projects-cat-banner" style="background-color: #efffda; border-bottom: 2px solid #8cc63f;">
     <div class="container-fluid">
       <h1 class="heading-primary style-1" style="color: #000000;">
         Handed Over Projects</h1>

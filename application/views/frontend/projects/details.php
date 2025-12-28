@@ -28,7 +28,7 @@ $this->load->view('frontend/header.php');
 										<span><?php echo $project_info->address; ?>
 </span>
 										<p class="mt-40"><?php echo $project_info->description; ?></p>
-										<p>Contact : +88017300 62 128</p>
+										<p>For E-Brochure Contact Us  : +88017300 62 128</p>
 								</div>
 						</div>
 						<div class="row  full-height-sm project-info-row">

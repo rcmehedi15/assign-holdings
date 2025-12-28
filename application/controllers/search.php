@@ -30,7 +30,7 @@ class Search extends CI_Controller
 					'id'=>$val->id,
 					'name'=>$val->name,
 					'address'=>$val->location,
-					'link'=>'projects/details/'.$val->id,
+					'link'=> base_url('projects/details/'.$val->id),
 					'image'=>base_url().'asset/images/projects/'.$val->ataglance_image,
 					'size'=>$val->size,
 					'type'=>$val->type
